@@ -39,12 +39,16 @@ const handleTabChange = (id) => {
 
     return (
         <section className="text-white" id="about">
+
+            <h2 className="text-center text-white mt-4 mb-8 md:mb-12 font-extrabold text-4xl sm:text-5xl lg:text-6xl">
+                <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#C33764] to-[#1D2671]">
+                    About Me
+                </span>
+            </h2>
+
             <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
                 <Image src="/images/about-image.png" width={500} height={500} />
                 <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-                    <span className="text-center text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-[#C33764] to-[#1D2671]">
-                        About Me
-                    </span>
                     <p className="text-base lg:text-lg">
                         Hey there! I'm a Bolivian guy with a passion for technology and video games. I kick-started my college 
                         journey at Miami Dade College, and now I'm diving deep into the world of Computer Science at the University of Florida. 
