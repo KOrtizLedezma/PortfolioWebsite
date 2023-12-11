@@ -17,7 +17,7 @@ const buttonClasses = active ? "text-white" : "text-[#ADB7BE]";
         <motion.div
             animate={active ? "active" : "default"}
             variants={variants}
-            className="h-1 bg-primary-500 mt-2 mr-3"
+            className="h-1 bg-gradient-to-r from-[#C33764] to-[#1D2671] mt-2 mr-3"
         ></motion.div>
     </button>
   );
