@@ -39,8 +39,8 @@ const handleTabChange = (id) => {
 
     return (
         <section className="text-white" id="about">
-
-            <h2 className="text-center text-white mt-4 mb-8 md:mb-12 font-extrabold text-4xl sm:text-5xl lg:text-6xl">
+            <div className="mt-20">
+                <h2 className="text-center text-white mt-20 mb-8 md:mb-12 font-extrabold text-4xl sm:text-5xl lg:text-6xl">
                 <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#C33764] to-[#1D2671]">
                     About Me
                 </span>
@@ -80,6 +80,8 @@ const handleTabChange = (id) => {
                     </div>
                 </div>
             </div>
+            </div>
+            
         </section>
   );
 };

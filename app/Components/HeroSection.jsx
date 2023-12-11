@@ -4,10 +4,29 @@ import Image from "next/image";
 import { TypeAnimation } from 'react-type-animation';
 import { motion } from "framer-motion";
 
-
 const HeroSection = () => {
+  
+  const handleHireMeClick = () => {
+    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const handleDownloadCVClick = () => {
+    const existingFileUrl = 'CV.txt';
+
+    const a = document.createElement('a');
+
+    a.download = 'CV.txt';
+    a.href = existingFileUrl;
+
+    document.body.appendChild(a);
+
+    a.click();
+
+    document.body.removeChild(a);
+  };
+
   return (
-    <section className="lg-py-16">
+    <section className="lg-py-16 mb-20">
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <motion.div initial={{ opacity: 0, scale: 0.5}} 
                     animate={{ opacity: 1, scale: 1 }} 
@@ -33,10 +52,15 @@ const HeroSection = () => {
             If you can imagine it, you can code it.
           </p>
           <div>
-            <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-[#C33764] to-[#1D2671] hover:bg-slate-200 text-white">
+            <button
+              onClick={handleHireMeClick}
+              className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-[#C33764] to-[#1D2671] hover:bg-slate-200 text-white"
+              >
               Hire me
             </button>
-            <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-[#C33764] to-[#1D2671] hover:bg-slate-800 text-white mt-4">
+            <button 
+              onClick={handleDownloadCVClick}
+              className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-[#C33764] to-[#1D2671] hover:bg-slate-800 text-white mt-4">
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">Download CV</span>
               
             </button>
