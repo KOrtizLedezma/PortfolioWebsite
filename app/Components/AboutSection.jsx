@@ -48,7 +48,7 @@ const handleTabChange = (id) => {
 
             <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
                 <Image src="/images/about-image.png" width={500} height={500} />
-                <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
+                <div className="mt-4 md:mt-0 text-left flex flex-col h-full" alt="about-image">
                     <p className="text-base lg:text-lg">
                         Hey there! I&apos;m a Bolivian guy with a passion for technology and video games. I kick-started my college 
                         journey at Miami Dade College, and now I&apos;m diving deep into the world of Computer Science at the University of Florida. 
