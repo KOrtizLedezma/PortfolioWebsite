@@ -1,15 +1,18 @@
 import React from 'react'
+import Image from "next/image";
 
 const Footer = () => {
   return (
     <footer className="footer border z-10 border-t-[#33353F] border-l-transparent border-r-transparent text-white">
         <div className="container p-12 flex justify-between"> 
             <span>
-                LOGO
+            <Image
+                src="/Images/Logo.png"
+                alt=""
+                width={60}
+                height={60}
+                />
             </span>
-            <p className="text-[#33353F]">
-                All rights reserved
-            </p>
         </div>
     </footer>
   );
