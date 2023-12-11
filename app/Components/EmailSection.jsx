@@ -43,16 +43,16 @@ const EmailSection = () => {
 
             <div>
                 <h5 className="text-xl font-bold text-white my-2 ">
-                    Let's Connect
+                    Let&apos;s Connect
                 </h5>
                 <p className="text-[#ADB7BE] mb-4 max-w-md">
                     {" "}
-                    Hello there! I'm thrilled to connect with you. My passion for coding is not just a career choice; 
-                    it's a journey of constant growth and learning. Currently on the lookout for exciting new opportunities 
+                    Hello there! I&apos;m thrilled to connect with you. My passion for coding is not just a career choice; 
+                    it&apos;s a journey of constant growth and learning. Currently on the lookout for exciting new opportunities 
                     to further sharpen my coding skills, I am eager to explore fresh challenges that will propel me to new heights. 
-                    Whether it's collaborating on innovative projects or contributing to a dynamic team, 
-                    I am ready to embrace the next chapter of my coding adventure. Feel free to reach out—I'm always open to new connections 
-                    and opportunities. Let's create something extraordinary together
+                    Whether it&apos;s collaborating on innovative projects or contributing to a dynamic team, 
+                    I am ready to embrace the next chapter of my coding adventure. Feel free to reach out—I&apos;m always open to new connections 
+                    and opportunities. Let&apos;s create something extraordinary together
                 </p>
 
                 <div className="socials flex flex-row gap-2">

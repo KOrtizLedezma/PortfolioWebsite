@@ -50,13 +50,13 @@ const handleTabChange = (id) => {
                 <Image src="/images/about-image.png" width={500} height={500} />
                 <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
                     <p className="text-base lg:text-lg">
-                        Hey there! I'm a Bolivian guy with a passion for technology and video games. I kick-started my college 
-                        journey at Miami Dade College, and now I'm diving deep into the world of Computer Science at the University of Florida. 
-                        Coding is not just a skill for me; it's a source of joy. 
-                        I'm well-versed in languages like Python, Java, C++, C#, and JavaScript. I love the creative process that comes 
-                        with coding. When I'm not immersed in lines of code, you can probably find me exploring the virtual realms 
+                        Hey there! I&apos;m a Bolivian guy with a passion for technology and video games. I kick-started my college 
+                        journey at Miami Dade College, and now I&apos;m diving deep into the world of Computer Science at the University of Florida. 
+                        Coding is not just a skill for me; it&apos;s a source of joy. 
+                        I&apos;m well-versed in languages like Python, Java, C++, C#, and JavaScript. I love the creative process that comes 
+                        with coding. When I&apos;m not immersed in lines of code, you can probably find me exploring the virtual realms 
                         of my favorite video games. I believe in the power of technology to create amazing experiences, 
-                        and I'm excited to be a part of shaping the future in the world of Computer Science.
+                        and I&apos;m excited to be a part of shaping the future in the world of Computer Science.
 
                     </p>
                     <div className="flex flex-row justify-start mt-8">
