@@ -64,5 +64,3 @@ const HeroSection = () => {
 }
 
 export default HeroSection;
-
-//http://localhost:3000/
