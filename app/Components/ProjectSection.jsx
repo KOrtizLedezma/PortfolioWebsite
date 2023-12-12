@@ -29,6 +29,14 @@ const projectsData = [
     tag: ["All", "C++"],
     gitUrl: "https://github.com/KOrtizLedezma/Minesweeper.git",
   },
+  {
+    id: 4,
+    title: "Invoker Trainer",
+    description: "Small game to improve skills with Invoker in the famous game Dota 2.",
+    image: "/Images/Projects/Dota2.png",
+    tag: ["All", "Python"],
+    gitUrl: "https://github.com/KOrtizLedezma/InvokerTrainer",
+  },
 ];
 
 const ProjectsSection = () => {
