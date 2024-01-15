@@ -25,6 +25,16 @@ const TAB_DATA = [
         </ul>
     ),
     },
+    {
+        title: "Languages",
+        id: "languages",
+        content: (
+            <ul className="list-disc pl-2">
+                <li>English</li>
+                <li>Spanish</li>
+            </ul>
+        ),
+        },
 ];
 
 const AboutSection = () => {
@@ -61,18 +71,25 @@ const handleTabChange = (id) => {
                     </p>
                     <div className="flex flex-row justify-start mt-8">
                         <TabButton
-                            selectTab={() => handleTabChange("skills")}
-                            active={tab === "skills"}
-                        >
-                        {" "}
-                        Skills{" "}
-                        </TabButton>
-                        <TabButton
                             selectTab={() => handleTabChange("education")}
                             active={tab === "education"}
                         >
                         {" "}
                         Education{" "}
+                        </TabButton>
+                        <TabButton
+                            selectTab={() => handleTabChange("languages")}
+                            active={tab === "languages"}
+                        >
+                        {" "}
+                        Languages{" "}
+                        </TabButton>
+                        <TabButton
+                            selectTab={() => handleTabChange("skills")}
+                            active={tab === "skills"}
+                        >
+                        {" "}
+                        Skills{" "}
                         </TabButton>
                     </div>
                     <div className="mt-8">
