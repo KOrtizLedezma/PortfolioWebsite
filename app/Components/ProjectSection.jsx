@@ -32,7 +32,7 @@ const projectsData = [
   {
     id: 4,
     title: "Invoker Trainer",
-    description: "Small game to improve skills with Invoker in the famous game Dota 2.",
+    description: "Embark on a thrilling journey to master the arcane arts of Invoker, the iconic hero in Dota 2, with our compact and engaging skill improvement game. Designed for both novice and seasoned players, the Invoker Mastery Challenge offers a unique and entertaining experience to enhance your proficiency with this powerful hero.",
     image: "/Images/Projects/Dota2.png",
     tag: ["All", "Python"],
     gitUrl: "https://github.com/KOrtizLedezma/InvokerTrainer",
@@ -40,7 +40,7 @@ const projectsData = [
   {
     id: 5,
     title: "Random Mail Gift Mod",
-    description: "A stardew valley mod that will send gifts to all the player each day depending on their daily luck.",
+    description: "Introducing the \"Random Mail Gift\" mod, a delightful addition to Stardew Valley that adds an element of surprise to your daily routine. This mod is designed to bring joy to players by sending carefully curated gifts each day, tailored to your in-game luck. Say goodbye to mundane routines and hello to daily surprises that will brighten your virtual farm life",
     image: "/Images/Projects/StardewValleyMod.jpeg",
     tag: ["All", "C#"],
     gitUrl: "https://github.com/KOrtizLedezma/RandomMailGiftMod", 
