@@ -43,7 +43,15 @@ const projectsData = [
     description: "A stardew valley mod that will send gifts to all the player each day depending on their daily luck.",
     image: "/Images/Projects/StardewValleyMod.jpeg",
     tag: ["All", "C#"],
-    gitUrl: "https://github.com/KOrtizLedezma/RandomMailGiftMod",
+    gitUrl: "https://github.com/KOrtizLedezma/RandomMailGiftMod", 
+  },
+  {
+    id: 5,
+    title: "To-Do List App - Desktop Version",
+    description: "A simple and efficient To-Do List Manager using C# that allows users to organize their tasks temporarily without the need for permanent storage. This lightweight application provides a user-friendly interface.",
+    image: "/Images/Projects/To-Do-List.png",
+    tag: ["All", "C#"],
+    gitUrl: "https://github.com/KOrtizLedezma/To-Do-List.git", 
   },
 ];
 
