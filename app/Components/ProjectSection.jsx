@@ -37,6 +37,14 @@ const projectsData = [
     tag: ["All", "Python"],
     gitUrl: "https://github.com/KOrtizLedezma/InvokerTrainer",
   },
+  {
+    id: 5,
+    title: "Random Mail Gift Mod",
+    description: "A stardew valley mod that will send gifts to all the player each day depending on their daily luck.",
+    image: "/Images/Projects/StardewValleyMod.jpeg",
+    tag: ["All", "C#"],
+    gitUrl: "https://github.com/KOrtizLedezma/RandomMailGiftMod",
+  },
 ];
 
 const ProjectsSection = () => {
@@ -84,6 +92,11 @@ const ProjectsSection = () => {
           onClick={handleTagChange}
           name="Java"
           isSelected={tag === "Java"}
+        />
+        <ProjectTag
+          onClick={handleTagChange}
+          name="C#"
+          isSelected={tag === "C#"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
