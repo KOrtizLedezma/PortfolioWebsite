@@ -46,12 +46,20 @@ const projectsData = [
     gitUrl: "https://github.com/KOrtizLedezma/RandomMailGiftMod", 
   },
   {
-    id: 5,
+    id: 6,
     title: "To-Do List App - Desktop Version",
     description: "A simple and efficient To-Do List Manager using C# that allows users to organize their tasks temporarily without the need for permanent storage. This lightweight application provides a user-friendly interface.",
     image: "/Images/Projects/To-Do-List.png",
     tag: ["All", "C#"],
     gitUrl: "https://github.com/KOrtizLedezma/To-Do-List.git", 
+  },
+  {
+    id: 7,
+    title: "Portfolio Website",
+    description: "Welcome to the heart of my digital journey - an immersive showcase that unveils the code powering my portfolio website. Dive into the intricacies of web development and witness firsthand the craftsmanship behind the design and functionality of my online presence.",
+    image: "/Images/Projects/PortfolioWebsite.png",
+    tag: ["All", "JavaScript"],
+    gitUrl: "https://github.com/KOrtizLedezma/PortfolioWebsite.git", 
   },
 ];
 
@@ -105,6 +113,11 @@ const ProjectsSection = () => {
           onClick={handleTagChange}
           name="C#"
           isSelected={tag === "C#"}
+        />
+        <ProjectTag
+          onClick={handleTagChange}
+          name="JavaScript"
+          isSelected={tag === "JavaScript"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
