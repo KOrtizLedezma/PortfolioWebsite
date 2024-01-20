@@ -11,11 +11,11 @@ const HeroSection = () => {
   };
 
   const handleDownloadCVClick = () => {
-    const existingFileUrl = 'CV.txt';
+    const existingFileUrl = 'Kenet Ortiz CV.pdf';
 
     const a = document.createElement('a');
 
-    a.download = 'CV.txt';
+    a.download = 'Kenet-Ortiz-CV.txt';
     a.href = existingFileUrl;
 
     document.body.appendChild(a);
