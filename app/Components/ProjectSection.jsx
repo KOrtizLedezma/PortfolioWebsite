@@ -61,6 +61,14 @@ const projectsData = [
     tag: ["All", "JavaScript"],
     gitUrl: "https://github.com/KOrtizLedezma/PortfolioWebsite.git", 
   },
+  {
+    id: 8,
+    title: "Wordle",
+    description: "Dynamic Wordle game project featuring JavaScript with Node.js, boasting authentication, Firebase API integration, and Wordnik API for an immersive gaming experience.",
+    image: "/Images/Projects/Wordle.png",
+    tag: ["All", "JavaScript"],
+    gitUrl: "https://github.com/KOrtizLedezma/Wordle", 
+  },
 ];
 
 const ProjectsSection = () => {
