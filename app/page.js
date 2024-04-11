@@ -5,6 +5,7 @@ import AboutSection from "./Components/AboutSection"
 import ProjectSection from "./Components/ProjectSection"
 import EmailSection from "./Components/EmailSection"
 import Footer from "./Components/Footer"
+import AchievementsSection from "./Components/AchievementSection"
 import { Analytics } from "@vercel/analytics/react"
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <NavBar/>
       <div class="container mt-24 mx-auto px-12 py-4">
         <HeroSection />
+        <AchievementsSection />
         <AboutSection />
         <ProjectSection />
         <EmailSection />
