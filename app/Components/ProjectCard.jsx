@@ -26,6 +26,7 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl }) => {
             </div>
           )}
         </div>
+        <h5 className="project_title_style">{title}</h5>
       </div>
     </Link>
   );
