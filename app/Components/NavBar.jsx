@@ -4,7 +4,6 @@ import React, {useState} from 'react'
 import NavLink from './NavLink';
 import {Bars3Icon, XMarkIcon} from "@heroicons/react/24/solid";
 import MenuOverlay from './MenuOverlay';
-import Image from "next/image";
 
 const navLinks = [
 {
@@ -30,20 +29,20 @@ const NavBar = () => {
     const [navbarOpen, setNavbarOpen] = useState(false);
 
     return (
-        <nav className="fixed  top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-90">
+        <nav className="fixed_overlay">
             <div className="flex container flex-wrap items-center justify-between mx-auto px-4 py-2">
                 <button onClick={handleLogoClick} className="flex items-center">
-                    <span className="text-[#ADB7BE] text-xl md:text-5xl font-semibold">HOME</span>
+                    <span className="NavBar_heading">HOME</span>
                 </button>
                 <div className="mobile-menu block md:hidden">
                 {
                     !navbarOpen ? 
                     (
-                        <button onClick={() => setNavbarOpen(true)} className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white">
+                        <button onClick={() => setNavbarOpen(true)} className="NavBar_button">
                             <Bars3Icon className="h-5 w-5" />
                         </button>
                     ) : (
-                        <button onClick={() => setNavbarOpen(false)} className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white">
+                        <button onClick={() => setNavbarOpen(false)} className="NavBar_button">
                             <XMarkIcon className="h-5 w-5" />
                         </button>
                     )

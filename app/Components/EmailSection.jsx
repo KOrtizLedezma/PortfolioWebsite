@@ -42,17 +42,21 @@ const EmailSection = () => {
         <section id="contact" className="grid md:grid-cols-2 my-12 md-my-12 py-24 gap-4 relative">
 
             <div>
-                <h5 className="text-xl font-bold text-white my-2 ">
+                <h5 className="email_subheading">
                     Let&apos;s Connect
                 </h5>
-                <p className="text-[#ADB7BE] mb-4 max-w-md">
+                <p className="email_custom_text_style">
                     {" "}
-                    Hello there! I&apos;m thrilled to connect with you. My passion for coding is not just a career choice; 
-                    it&apos;s a journey of constant growth and learning. Currently on the lookout for exciting new opportunities 
-                    to further sharpen my coding skills, I am eager to explore fresh challenges that will propel me to new heights. 
-                    Whether it&apos;s collaborating on innovative projects or contributing to a dynamic team, 
-                    I am ready to embrace the next chapter of my coding adventure. Feel free to reach out—I&apos;m always open to new connections 
-                    and opportunities. Let&apos;s create something extraordinary together
+                    Hello there! I&apos;m thrilled to connect with you. My passion for <br /> 
+                    coding is not just a career choice; it&apos;s a journey of constant <br />
+                    growth and learning. Currently on the lookout for exciting new <br /> 
+                    opportunities to further sharpen my coding skills, I am eager to <br />
+                    explore fresh challenges that will propel me to new heights. <br />
+                    Whether it&apos;s collaborating on innovative projects or <br />
+                    contributing to a dynamic team, I am ready to embrace the <br /> 
+                    next chapter of my coding adventure. Feel free to reach out <br /> 
+                    I&apos;m always open to new connections and opportunities. <br /> 
+                    Let&apos;s create something extraordinary together
                 </p>
 
                 <div className="socials flex flex-row gap-2">
@@ -69,48 +73,48 @@ const EmailSection = () => {
             <div>
                 <form className="flex flex-col" onSubmit={handleSubmit}>
                     <div className="mb-6">
-                        <label htmlFor="email" className="text-white block text-sm font-medium mb-2"> 
+                        <label htmlFor="email" className="email_label_style"> 
                             Your Email 
                         </label>
                         <input  name = "email"
                                 type="email" 
                                 id="email" 
                                 required 
-                                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                                className="email_input_style"
                                 placeholder="example@example.com"/>
                     </div>
                 
                     <div className="mb-6">
-                        <label htmlFor="subject" className="text-white block text-sm font-medium mb-2"> 
+                        <label htmlFor="subject" className="email_label_style"> 
                             Subject 
                         </label>
                         <input  name="subject"
                                 type="text" 
                                 id="subject" 
                                 required 
-                                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                                className="email_input_style"
                                 placeholder="Just saying hi"/>
                     </div>
 
                     <div className="mb-6">
-                        <label htmlFor="message" className="text-white block text-sm font-medium mb-2"> 
+                        <label htmlFor="message" className="email_label_style"> 
                             Message 
                         </label>
                         <textarea name="message"
                                     id="message"
-                                    className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+                                    className="email_input_style"
                                     placeholder="Let's talk about..."/>
                     </div>
 
 
                     <button
                         type="submit"
-                        className="bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg w-full bg-gradient-to-br from-[#C33764] to-[#1D2671]">
+                        className="sendMessage_button">
                             Send Message
                     </button>
                     {
                         emailSubmitted && (
-                            <p className="text-white text-sm mt-2">
+                            <p className="email_notification_text">
                                 Email sent succesfully!
                             </p>
                         )

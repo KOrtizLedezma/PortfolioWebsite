@@ -92,11 +92,11 @@ const ProjectsSection = () => {
   return (
     <section id="projects">
       <h2 className="text-center text-white mt-4 mb-8 md:mb-12 font-extrabold text-4xl sm:text-5xl lg:text-6xl">
-        <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#C33764] to-[#1D2671]">
+        <span className="gradient_text">
           My Projects
         </span>
       </h2>
-      <div className="text-white flex flex-wrap justify-center items-center gap-2 py-6">
+      <div className="tag_section">
         <ProjectTag
           onClick={handleTagChange}
           name="All"

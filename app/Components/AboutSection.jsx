@@ -51,7 +51,7 @@ const handleTabChange = (id) => {
         <section className="text-white" id="about">
             <div className="mt-20">
                 <h2 className="text-center text-white mt-20 mb-8 md:mb-12 font-extrabold text-4xl sm:text-5xl lg:text-6xl">
-                <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#C33764] to-[#1D2671]">
+                <span className="gradient_text">
                     About Me
                 </span>
             </h2>
