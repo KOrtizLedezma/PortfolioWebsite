@@ -16,7 +16,7 @@ const achievementsList = [
     postfix: "+",
   },
   {
-    metric: "Languages",
+    metric: "Programming Languages",
     value: "7",
   },
   {
