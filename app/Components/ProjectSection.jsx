@@ -69,6 +69,14 @@ const projectsData = [
     tag: ["All", "JavaScript"],
     gitUrl: "https://github.com/KOrtizLedezma/Wordle", 
   },
+  {
+    id: 9,
+    title: "To-Do List Web App",
+    description: "A simple and responsive to-do list application built with CSS (Tailwind CSS), and JavaScript.",
+    image: "/Images/Projects/To-Do-List-Web.png",
+    tag: ["All", "JavaScript"],
+    gitUrl: "https://github.com/KOrtizLedezma/To-Do-List-Webpage", 
+  },
 ];
 
 const ProjectsSection = () => {
