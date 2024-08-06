@@ -77,6 +77,14 @@ const projectsData = [
     tag: ["All", "JavaScript"],
     gitUrl: "https://github.com/KOrtizLedezma/To-Do-List-Webpage", 
   },
+  {
+    id: 9,
+    title: "Song Association Helper",
+    description: "A simple and responsive app that suggest songs according to a word.",
+    image: "/Images/Projects/SongAssociation_adj.png",
+    tag: ["All", "JavaScript"],
+    gitUrl: "https://github.com/KOrtizLedezma/Project3COP3530SAH.git", 
+  },
 ];
 
 const ProjectsSection = () => {
