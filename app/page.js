@@ -20,7 +20,6 @@ export default function Home() {
         <EmailSection />
         <Analytics />
       </div>
-      <Footer />
     </main>
   )
 }

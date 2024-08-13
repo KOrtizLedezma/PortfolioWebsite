@@ -3,6 +3,8 @@
 import React, { useState }from 'react';
 import GithubIcon from '../../public/Images/github-icon.svg';
 import LinkedinIcon from '../../public/Images/linkedin-icon.svg';
+import MailIcon from '../../public/Images/mail-icon.svg';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import Link from 'next/link';
 import Image from "next/image";
 
@@ -57,70 +59,22 @@ const EmailSection = () => {
                     next chapter of my coding adventure. Feel free to reach out <br /> 
                     I&apos;m always open to new connections and opportunities. <br /> 
                     Let&apos;s create something extraordinary together
-                </p>
-
-                <div className="socials flex flex-row gap-2">
-                    <Link href="https://github.com/KOrtizLedezma">
-                        <Image src={GithubIcon} alt="Github Icon"/>
-                    </Link>
-                    <Link href="https://www.linkedin.com/in/kenet-ortiz-67a4a421b/">
-                        <Image src={LinkedinIcon} alt="Linkedin Icon"/>
-                    </Link>
-                </div>
+                </p>    
             </div>
         
         
-            <div>
-                <form className="flex flex-col" onSubmit={handleSubmit}>
-                    <div className="mb-6">
-                        <label htmlFor="email" className="email_label_style"> 
-                            Your Email 
-                        </label>
-                        <input  name = "email"
-                                type="email" 
-                                id="email" 
-                                required 
-                                className="email_input_style"
-                                placeholder="example@example.com"/>
-                    </div>
-                
-                    <div className="mb-6">
-                        <label htmlFor="subject" className="email_label_style"> 
-                            Subject 
-                        </label>
-                        <input  name="subject"
-                                type="text" 
-                                id="subject" 
-                                required 
-                                className="email_input_style"
-                                placeholder="Just saying hi"/>
-                    </div>
-
-                    <div className="mb-6">
-                        <label htmlFor="message" className="email_label_style"> 
-                            Message 
-                        </label>
-                        <textarea name="message"
-                                    id="message"
-                                    className="email_input_style"
-                                    placeholder="Let's talk about..."/>
-                    </div>
-
-
-                    <button
-                        type="submit"
-                        className="sendMessage_button">
-                            Send Message
-                    </button>
-                    {
-                        emailSubmitted && (
-                            <p className="email_notification_text">
-                                Email sent succesfully!
-                            </p>
-                        )
-                    }
-
-                </form>
+            <div className="flex items-center justify-center">
+                <div className="socials flex items-center justify-center gap-4">
+                    <Link href="https://github.com/KOrtizLedezma">
+                        <FaGithub size={128} />
+                    </Link>
+                    <Link href="https://www.linkedin.com/in/kenet-ortiz-67a4a421b/">
+                        <FaLinkedin size={128} />
+                    </Link>
+                    <Link href="mailto:kenet2016@icloud.com">
+                        <FaEnvelope size={128} />
+                    </Link>
+                </div>
             </div>
         </section>
     );

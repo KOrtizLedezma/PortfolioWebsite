@@ -1,19 +1,50 @@
 "use client";
 import React, { useTransition, useState } from "react";
+import { SiCplusplus, SiCsharp, SiJava, SiPython, SiJavascript, SiHtml5, SiCss3, SiIonic } from 'react-icons/si';
+import { FaJava, FaPython, FaJs, FaHtml5, FaCss3, FaReact, FaDatabase } from 'react-icons/fa';
 import Image from "next/image";
 import TabButton from "./TabButton";
 
 const TAB_DATA = [
     {
-    title: "Skills",
-    id: "skills",
-    content: (
-        <ul className="list-disc pl-2">
-            <li>C++, C#, Java, Python</li>
-            <li>JavaScript, Ionic 4</li>
-            <li>VHDL</li>
-        </ul>
-    ),
+        title: "Skills",
+        id: "skills",
+        content: (
+            <ul className="list-none pl-2 flex flex-wrap gap-4">
+                <li className="flex items-center">
+                    <SiCplusplus size={32} color="#00599C" />
+                    <span className="ml-2">C++</span>
+                </li>
+                <li className="flex items-center">
+                    <SiCsharp size={32} color="#7A00EB" />
+                    <span className="ml-2">C#</span>
+                </li>
+                <li className="flex items-center">
+                    <FaJava size={32} color="#007396" />
+                    <span className="ml-2">Java</span>
+                </li>
+                <li className="flex items-center">
+                    <FaPython size={32} color="#3776AB" />
+                    <span className="ml-2">Python</span>
+                </li>
+                <li className="flex items-center">
+                    <SiJavascript size={32} color="#F7DF1E" />
+                    <span className="ml-2">JavaScript</span>
+                </li>
+                <li className="flex items-center">
+                    <SiCss3 size={32} color="#2637B6" />
+                    <span className="ml-2">CSS3</span>
+                </li>
+                <li className="flex items-center">
+                    <FaReact size={32} color="#61DAFB" />
+                    <span className="ml-2">React</span>
+                </li>
+                <li className="flex items-center">
+                    <SiIonic size={32} color="#3880FF" />
+                    <span className="ml-2">Ionic</span>
+                </li>
+            </ul>
+        ),
     },
     {
     title: "Education",
