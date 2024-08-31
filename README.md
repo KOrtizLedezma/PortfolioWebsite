@@ -40,7 +40,7 @@ This portfolio showcases a selection of my work:
 Feel free to reach out to me through the contact form on the website or connect with me on:
 
 - **GitHub**: [Kenet Ortiz](https://github.com/KOrtizLedezma)
-- **LinkedIn**: [Kenet Ortiz](https://www.linkedin.com/in/kenet-ortiz-ledezma-67a4a421b/)
+- **LinkedIn**: [Kenet Ortiz](https://www.linkedin.com/in/kenetortizledezma/)
 
 ## 🛠️ Deployment
 
