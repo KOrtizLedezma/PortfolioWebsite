@@ -68,7 +68,7 @@ const EmailSection = () => {
                     <Link href="https://github.com/KOrtizLedezma">
                         <FaGithub size={128} />
                     </Link>
-                    <Link href="https://www.linkedin.com/in/kenet-ortiz-67a4a421b/">
+                    <Link href="https://www.linkedin.com/in/kenetortizledezma/">
                         <FaLinkedin size={128} />
                     </Link>
                     <Link href="mailto:kenet2016@icloud.com">
