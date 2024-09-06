@@ -4,6 +4,7 @@ import { SiCplusplus, SiCsharp, SiJava, SiPython, SiJavascript, SiHtml5, SiCss3,
 import { FaJava, FaPython, FaJs, FaHtml5, FaCss3, FaReact, FaDatabase } from 'react-icons/fa';
 import Image from "next/image";
 import TabButton from "./TabButton";
+import Computer3D from "./Computer3D";
 
 const TAB_DATA = [
     {
@@ -88,7 +89,7 @@ const handleTabChange = (id) => {
             </h2>
 
             <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-                <Image src="/Images/about-image.png" width={500} height={500} />
+                <Computer3D />
                 <div className="mt-4 md:mt-0 text-left flex flex-col h-full" alt="about-image">
                     <p className="text-base lg:text-lg">
                         Hey there! I&apos;m a Bolivian guy with a passion for technology and video games. I kick-started my college 
