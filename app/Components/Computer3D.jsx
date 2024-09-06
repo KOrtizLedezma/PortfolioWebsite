@@ -160,7 +160,7 @@ const Computer3D = () => {
       });
     });
 
-    camera.position.z = 18;
+    camera.position.z = 10;
 
     const controls = new OrbitControls(camera, renderer.domElement);
     controls.enableDamping = true;
@@ -168,7 +168,7 @@ const Computer3D = () => {
     controls.screenSpacePanning = false;
 
     controls.minDistance = 8; // Min zoom distance
-    controls.maxDistance = 30; // Max zoom distance
+    controls.maxDistance = 50; // Max zoom distance
     controls.maxPolarAngle = Math.PI / 2;
 
     const animate = () => {
