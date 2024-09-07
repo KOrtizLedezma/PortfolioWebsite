@@ -41,38 +41,35 @@ const EmailSection = () => {
     }
 
     return (
-        <section id="contact" className="grid md:grid-cols-2 my-12 md-my-12 py-24 gap-4 relative">
-
-            <div>
-                <h5 className="email_subheading">
+        <section id="contact" className="flex flex-col md:grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative">
+            <div className="mb-8 md:mb-0">
+                <h5 className="email_subheading text-2xl md:text-3xl font-bold mb-4">
                     Let&apos;s Connect
                 </h5>
-                <p className="email_custom_text_style">
-                    {" "}
-                    Hello there! I&apos;m thrilled to connect with you. My passion for <br /> 
-                    coding is not just a career choice; it&apos;s a journey of constant <br />
-                    growth and learning. Currently on the lookout for exciting new <br /> 
-                    opportunities to further sharpen my coding skills, I am eager to <br />
-                    explore fresh challenges that will propel me to new heights. <br />
-                    Whether it&apos;s collaborating on innovative projects or <br />
-                    contributing to a dynamic team, I am ready to embrace the <br /> 
-                    next chapter of my coding adventure. Feel free to reach out <br /> 
-                    I&apos;m always open to new connections and opportunities. <br /> 
-                    Let&apos;s create something extraordinary together
+                <p className="email_custom_text_style text-sm md:text-base">
+                    Hello there! I&apos;m thrilled to connect with you. My passion for 
+                    coding is not just a career choice; it&apos;s a journey of constant 
+                    growth and learning. Currently on the lookout for exciting new 
+                    opportunities to further sharpen my coding skills, I am eager to 
+                    explore fresh challenges that will propel me to new heights. 
+                    Whether it&apos;s collaborating on innovative projects or 
+                    contributing to a dynamic team, I am ready to embrace the 
+                    next chapter of my coding adventure. Feel free to reach out 
+                    I&apos;m always open to new connections and opportunities. 
+                    Let&apos;s create something extraordinary together!
                 </p>    
             </div>
         
-        
             <div className="flex items-center justify-center">
-                <div className="socials flex items-center justify-center gap-4">
+                <div className="socials flex flex-row md:flex-col items-center justify-center gap-4 md:gap-8">
                     <Link href="https://github.com/KOrtizLedezma">
-                        <FaGithub size={128} />
+                        <FaGithub className="w-12 h-12 md:w-20 md:h-20" />
                     </Link>
                     <Link href="https://www.linkedin.com/in/kenetortizledezma/">
-                        <FaLinkedin size={128} />
+                        <FaLinkedin className="w-12 h-12 md:w-20 md:h-20" />
                     </Link>
                     <Link href="mailto:kenet2016@icloud.com">
-                        <FaEnvelope size={128} />
+                        <FaEnvelope className="w-12 h-12 md:w-20 md:h-20" />
                     </Link>
                 </div>
             </div>
