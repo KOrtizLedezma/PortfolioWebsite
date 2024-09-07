@@ -46,7 +46,7 @@ const EmailSection = () => {
                 <h5 className="email_subheading text-2xl md:text-3xl font-bold mb-4">
                     Let&apos;s Connect
                 </h5>
-                <p className="email_custom_text_style text-sm md:text-base">
+                <p className="email_custom_text_style text-sm md:text-base text-justify">
                     Hello there! I&apos;m thrilled to connect with you. My passion for 
                     coding is not just a career choice; it&apos;s a journey of constant 
                     growth and learning. Currently on the lookout for exciting new 

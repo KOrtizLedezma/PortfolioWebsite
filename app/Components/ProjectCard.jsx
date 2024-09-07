@@ -21,7 +21,7 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl }) => {
             <div className="overlay_content">
               <div className="mx-4"> {}
                 <h5 className="project_title_style">{title}</h5>
-                <p className="project_paragraph_text">{description}</p>
+                <p className="project_paragraph_text text-justify">{description}</p>
               </div>
             </div>
           )}
