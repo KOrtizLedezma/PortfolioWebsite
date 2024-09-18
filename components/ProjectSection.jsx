@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import React, { useState, useRef } from "react";
 import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
@@ -12,6 +12,7 @@ const projectsData = [
     image: "/Images/Projects/Racing_adj.png",
     tag: ["All", "Java"],
     gitUrl: "https://github.com/KOrtizLedezma/COP2800-FinalProject.git",
+    demoUrl: null,
   },
   {
     id: 2,
@@ -20,6 +21,7 @@ const projectsData = [
     image: "/Images/Projects/Sudoku_adj.png",
     tag: ["All", "Python"],
     gitUrl: "https://github.com/KOrtizLedezma/Sudoku-Project-4.git",
+    demoUrl: null,
   },
   {
     id: 3,
@@ -28,6 +30,7 @@ const projectsData = [
     image: "/Images/Projects/Minesweeper_adj.png",
     tag: ["All", "C++"],
     gitUrl: "https://github.com/KOrtizLedezma/Minesweeper.git",
+    demoUrl: null,
   },
   {
     id: 4,
@@ -36,6 +39,7 @@ const projectsData = [
     image: "/Images/Projects/Dota2_adj.png",
     tag: ["All", "Python"],
     gitUrl: "https://github.com/KOrtizLedezma/InvokerTrainer",
+    demoUrl: null,
   },
   {
     id: 5,
@@ -44,6 +48,7 @@ const projectsData = [
     image: "/Images/Projects/StardewValleyMod_adj.png",
     tag: ["All", "C#"],
     gitUrl: "https://github.com/KOrtizLedezma/RandomMailGiftMod", 
+    demoUrl: null,
   },
   {
     id: 6,
@@ -52,22 +57,25 @@ const projectsData = [
     image: "/Images/Projects/To-Do-List_adj.png",
     tag: ["All", "C#"],
     gitUrl: "https://github.com/KOrtizLedezma/To-Do-List.git", 
+    demoUrl: null,
   },
   {
     id: 7,
     title: "Portfolio Website",
-    description: "Welcome to the heart of my digital journey - an immersive showcase that unveils the code powering my portfolio website. Dive into the intricacies of web development and witness firsthand the craftsmanship behind the design and functionality of my online presence.",
+    description: "Welcome to the heart of my digital journey - an immersive showcase that unveils the code powering my portfolio website.",
     image: "/Images/Projects/PortfolioWebsite_adj.png",
     tag: ["All", "JavaScript"],
-    gitUrl: "https://github.com/KOrtizLedezma/PortfolioWebsite.git", 
+    gitUrl: "https://github.com/KOrtizLedezma/PortfolioWebsite.git",
+    demoUrl: "https://kenetortiz.vercel.app/",
   },
   {
     id: 8,
     title: "Wordle",
-    description: "Dynamic Wordle game project featuring JavaScript with Node.js, boasting authentication, Firebase API integration, and Wordnik API for an immersive gaming experience.",
+    description: "Dynamic Wordle game project featuring JavaScript with Node.js, boasting authentication, Firebase API integration.",
     image: "/Images/Projects/Wordle_adj.png",
     tag: ["All", "JavaScript"],
-    gitUrl: "https://github.com/KOrtizLedezma/Wordle", 
+    gitUrl: "https://github.com/KOrtizLedezma/Wordle",
+    demoUrl: "https://wordledesktop.vercel.app/",
   },
   {
     id: 9,
@@ -75,15 +83,17 @@ const projectsData = [
     description: "A simple and responsive to-do list application built with CSS (Tailwind CSS), and JavaScript.",
     image: "/Images/Projects/To-Do-List-Web.png",
     tag: ["All", "JavaScript"],
-    gitUrl: "https://github.com/KOrtizLedezma/To-Do-List-Webpage", 
+    gitUrl: "https://github.com/KOrtizLedezma/To-Do-List-Webpage",
+    demoUrl: "https://to-do-list-webpage-one.vercel.app/",
   },
   {
-    id: 9,
+    id: 10,
     title: "Song Association Helper",
-    description: "A simple and responsive app that suggest songs according to a word.",
+    description: "A simple and responsive app that suggests songs according to a word.",
     image: "/Images/Projects/SongAssociation_adj.png",
     tag: ["All", "JavaScript"],
-    gitUrl: "https://github.com/KOrtizLedezma/Project3COP3530SAH.git", 
+    gitUrl: "https://github.com/KOrtizLedezma/Project3COP3530SAH.git",
+    demoUrl: "https://songassociationhelper.vercel.app/",
   },
 ];
 
@@ -106,45 +116,19 @@ const ProjectsSection = () => {
   };
 
   return (
-    <section id="projects">
+    <section id="projects" className="mb-12">
       <h2 className="text-center text-white mt-4 mb-8 md:mb-12 font-extrabold text-4xl sm:text-5xl lg:text-6xl">
-        <span className="gradient_text">
-          My Projects
-        </span>
+        <span className="gradient_text">My Projects</span>
       </h2>
       <div className="tag_section">
-        <ProjectTag
-          onClick={handleTagChange}
-          name="All"
-          isSelected={tag === "All"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="Python"
-          isSelected={tag === "Python"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="C++"
-          isSelected={tag === "C++"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="Java"
-          isSelected={tag === "Java"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="C#"
-          isSelected={tag === "C#"}
-        />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="JavaScript"
-          isSelected={tag === "JavaScript"}
-        />
+        <ProjectTag onClick={handleTagChange} name="All" isSelected={tag === "All"} />
+        <ProjectTag onClick={handleTagChange} name="Python" isSelected={tag === "Python"} />
+        <ProjectTag onClick={handleTagChange} name="C++" isSelected={tag === "C++"} />
+        <ProjectTag onClick={handleTagChange} name="Java" isSelected={tag === "Java"} />
+        <ProjectTag onClick={handleTagChange} name="C#" isSelected={tag === "C#"} />
+        <ProjectTag onClick={handleTagChange} name="JavaScript" isSelected={tag === "JavaScript"} />
       </div>
-      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
+      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12 mt-12">
         {filteredProjects.map((project, index) => (
           <motion.li
             key={index}
@@ -159,6 +143,7 @@ const ProjectsSection = () => {
               description={project.description}
               imgUrl={project.image}
               gitUrl={project.gitUrl}
+              demoUrl={project.demoUrl}
             />
           </motion.li>
         ))}

@@ -1,7 +1,7 @@
-import HeroSection from "../components/HeroSection"
-import EmailSection from "../components/EmailSection"
-import FunFactsSection from "../components/FunFactsSection"
-import NavBar from "../components/NavBar"
+import HeroSection from "../../components/HeroSection"
+import EmailSection from "../../components/EmailSection"
+import FunFactsSection from "../../components/FunFactsSection"
+import NavBar from "../../components/NavBar"
 
 export default function Home() {
   return (
