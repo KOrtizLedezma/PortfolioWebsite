@@ -17,7 +17,6 @@ const buttonClasses = active ? "text-white" : "text-[#ADB7BE]";
         <motion.div
             animate={active ? "active" : "default"}
             variants={variants}
-            className="gradient_line"
         ></motion.div>
     </button>
   );

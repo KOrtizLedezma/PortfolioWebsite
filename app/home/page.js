@@ -1,5 +1,5 @@
 import HeroSection from "../../components/HeroSection"
-import EmailSection from "../../components/EmailSection"
+import ConnectSection from "../../components/ConnectSection"
 import FunFactsSection from "../../components/FunFactsSection"
 import NavBar from "../../components/NavBar"
 
@@ -10,7 +10,7 @@ export default function Home() {
       <div className="container mt-24 mx-auto px-12 py-4">
         <HeroSection />
         <FunFactsSection />
-        <EmailSection />
+        <ConnectSection />
       </div>
     </main>
   )

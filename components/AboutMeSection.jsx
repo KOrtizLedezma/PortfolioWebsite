@@ -5,10 +5,10 @@ import Image from "next/image";
 const AboutMeSection = () => {
 
     return (
-        <section className="text-white" id="about">   
+        <section className="text_plain_color" id="about">   
             <div className="md:grid md:grid-cols-2 gap-8 items-center py-1 px-4 xl:gap-16 sm:py-12 xl:px-16">
                 <div className="text-left flex flex-col h-full" alt="about-image">
-                    <h2 className="text-center text-white mb-4 md:mb-12 font-extrabold text-2xl sm:text-3xl lg:text-4xl">
+                    <h2 className="text-center mb-4 md:mb-12 font-extrabold text-2xl sm:text-3xl lg:text-4xl">
                         <span className="title_plain_color">
                             Who am I?
                         </span>

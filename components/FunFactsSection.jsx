@@ -4,9 +4,9 @@ import Image from "next/image";
 const AboutSection = () => {
 
     return (
-        <section className="text-white" id="about">
+        <section className="text_plain_color" id="about">
             <div className="mt-15">
-                <h2 className="text-center text-white mt-20 mb-8 md:mb-12 font-extrabold text-4xl sm:text-5xl lg:text-6xl">
+                <h2 className="text-center text_plain_color mt-20 mb-8 md:mb-12 font-extrabold text-4xl sm:text-5xl lg:text-6xl">
                     <span className="title_plain_color">
                         A little about me
                     </span>
