@@ -9,6 +9,7 @@
   --color-background-dark: #121212;
   --color-hover-dark: #1D2330;
   --overlay-bg-dark: 18, 18, 18;
+  --color-calendar-bckg-dark: #12121269;
   
   --color-primary-light: #FFEB00;
   --color-primary-hover-light: #80ff00;
@@ -16,6 +17,7 @@
   --color-background-light: #FFFFFF;
   --color-hover-light: #1D2330;
   --overlay-bg-light: 255, 255, 255;
+  --color-calendar-bckg-light: #ffea0071;
 }
 
 :root {
@@ -25,6 +27,7 @@
   --color-primary-hover: var(--color-primary-hover-dark);
   --color-secondary: var(--color-secondary-dark);
   --overlay-bg: var(--overlay-bg-dark);
+  --color-calendar-bckg: var(--color-calendar-bckg)
 }
 
 [data-theme="light"] {

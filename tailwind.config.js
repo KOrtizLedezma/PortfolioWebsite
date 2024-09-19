@@ -15,6 +15,7 @@ module.exports = {
         primary_hover: 'var(--color-primary-hover)',
         secondary: 'var(--color-secondary)',
         background: 'var(--color-background)',
+        cal_bckg: 'var(--color-calendar-bckg)',
       },
     },
   },
