@@ -5,8 +5,8 @@ import GitHubCalendar from 'react-github-calendar';
 const GitHubActivity = () => {
 
   const [customTheme, setCustomTheme] = useState({
-    dark: ['#e0e0e0', '#bdbdbd', '#9e9e9e', '#757575', '#616161'],
-    light: ['#e0e0e0', '#bdbdbd', '#9e9e9e', '#757575', '#616161'],
+    dark: ['#E0E0E0', '#898989', '#7C7C7C', '#6E6E6E', '#616161'],
+    light: ['#E0E0E0', '#898989', '#7C7C7C', '#6E6E6E', '#616161'],
   });
 
   return (
