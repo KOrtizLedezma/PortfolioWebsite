@@ -3,61 +3,75 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --color-primary-dark: #C33764;
+  --color-primary-hover-dark: #ff0051;
+  --color-secondary-dark: #ADB7BE;
+  --color-background-dark: #121212;
+  --color-hover-dark: #1D2330;
+  --overlay-bg-dark: 18, 18, 18;
+  
+  --color-primary-light: #FFEB00;
+  --color-primary-hover-light: #80ff00;
+  --color-secondary-light: #232324;
+  --color-background-light: #FFFFFF;
+  --color-hover-light: #1D2330;
+  --overlay-bg-light: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+:root {
+  --color-background: var(--color-background-dark);
+  --color-text: var(--color-secondary);
+  --color-primary: var(--color-primary-dark);
+  --color-primary-hover: var(--color-primary-hover-dark);
+  --color-secondary: var(--color-secondary-dark);
+  --overlay-bg: var(--overlay-bg-dark);
+}
+
+[data-theme="light"] {
+  --color-background: var(--color-background-light);
+  --color-text: var(--color-secondary);
+  --color-primary: var(--color-primary-light);
+  --color-primary-hover: var(--color-primary-hover-light);
+  --color-secondary: var(--color-secondary-light);
+  --overlay-bg: var(--overlay-bg-light);
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: var(--color-background);
 }
 
 .title_plain_color {
-  color: #C33764;
+  color: var(--color-primary);
 }
 
 .text_plain_color {
-  color: #ADB7BE;
+  color: var(--color-secondary);
 }
 
 /* Hero Section Styles */
 
 .hero_heading {
-  color: #ADB7BE;
+  color: var(--color-secondary);
   font-size: 2.25rem;
   font-weight: 800;
 }
 
 .hero_text_animation {
-  color: #C33764;
+  color: var(--color-primary);
   margin-bottom: 1rem;
   font-size: 1.25rem;
   font-weight: 800;
 }
 
 .hero_quote_text_style {
-  color: #ADB7BE;
+  color: var(--color-secondary);
   font-size: 1rem;
   margin-bottom: 1.25rem;
 }
 
 .image_container {
   border-radius: 50%;
-  background-color: #121212;
+  background-color: var(--color-background);;
   width: 300px;
   height: 300px;
   position: relative;
@@ -96,11 +110,11 @@ body {
   left: 0;
   right: 0;
   z-index: 10;
-  background-color: rgba(18, 18, 18, 0.9);
+  background-color: rgba(var(--overlay-bg), 0.9);
 }
 
 .NavBar_heading {
-  color: #ADB7BE;
+  color: var(--color-primary);
   font-size: 1.25rem;
   font-weight: 600;
 }
@@ -109,14 +123,9 @@ body {
   display: flex;
   align-items: center;
   padding: 0.5rem 0.75rem;
-  border: 1px solid #e2e8f0;
+  border: 1px solid var(--color-primary);
   border-radius: 0.375rem;
-  color: #e2e8f0;
-}
-
-.NavBar_button:hover {
-  color: white;
-  border-color: white;
+  color: var(--color-primary);
 }
 
 @media (min-width: 768px) {
@@ -133,13 +142,13 @@ body {
   padding-bottom: 0.5rem;
   padding-left: 0.75rem;
   padding-right: 1rem;
-  color: #ADB7BE;
+  color: var(--color-primary);
   font-size: 1rem;
   border-radius: 0.375rem;
 }
 
 .menu_item:hover {
-  color: white;
+  transform: scale(1.1);
 }
 
 @media (min-width: 640px) {
@@ -162,18 +171,18 @@ body {
   font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
-  color: #ADB7BE;
+  color: var(--color-primary);
 }
 
 .project_paragraph_text {
-  color: #ADB7BE;
+  color: var(--color-text);
   text-align: center;
 }
 
 /* Projects Section Styles */
 
 .tag_section {
-  color: #ADB7BE;
+  color: var(--color-primary);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -186,23 +195,24 @@ body {
 /* ProjectTag Styles */
 
 .tag_button_selected {
-  background-color: #C33764;
+  background-color: var(--color-primary);
+  color: var(--color-background);
 }
 
 .tag_button_selected:hover {
-  background-color: #C33764;
+  transform: scale(1.05);
 }
 
 .tag_button_unselected {
   display: block;
-  background-color: #121212;
+  background-color: var(--color-background);;
   border-radius: 9999px;
   padding: 0.5rem 1.25rem;
-  color: white;
+  color: var(--color-primary);
 }
 
 .tag_button_unselected:hover {
-  background-color: #1D2330;
+  transform: scale(1.1);
 }
 
 .skill-box {
@@ -211,7 +221,7 @@ body {
   justify-content: center;
   width: 100px;
   height: 100px;
-  border: 2px solid #C33763;
+  border: 2px solid var(--color-primary);
   border-radius: 8px;
   background-color: transparent;
   transition: transform 0.2s ease;
@@ -222,21 +232,20 @@ body {
 }
 
 .skill-box svg {
-  color: #ADB7BE;
+  color: var(--color-secondary);
   transition: color 0.3s ease;
 }
 
 .connect-icon {
-  color: #ADB7BE;
+  color: var(--color-secondary);
   transition: color 0.3s ease; 
 }
 
 .connect-icon:hover {
-  color: #C33764;
+  color: var(--color-primary);
 }
 
 .github-calendar-text {
-  color: #ADB7BE;
+  color: var(--color-secondary);
   font-weight: bold;
 }
-

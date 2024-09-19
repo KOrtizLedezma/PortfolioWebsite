@@ -15,20 +15,20 @@ const AboutMeSection = () => {
                     </h2>
                     <ul className="list-disc pl-5 text-justify">
                         <li>
-                            Hi Everyone, I am <span style={{ color: '#C33764' }}>Kenet Ortiz</span> and I was born in 
-                            <span style={{ color: '#C33764' }}> Cochabamba, Bolivia</span>.
+                            Hi Everyone, I am <span className="title_plain_color">Kenet Ortiz</span> and I was born in 
+                            <span className="title_plain_color"> Cochabamba, Bolivia</span>.
                         </li>
                         <br></br>
                         <li>
-                            I&apos;m a <span style={{ color: '#C33764' }}>Computer Science Major at the University of Florida</span>.
+                            I&apos;m a <span className="title_plain_color">Computer Science Major at the University of Florida</span>.
                         </li>
                         <br></br>
                         <li>
-                            I&apos;m interested in <span style={{ color: '#C33764' }}>Fullstack development, Cloud Development, and Game development</span>.
+                            I&apos;m interested in <span className="title_plain_color">Fullstack development, Cloud Development, and Game development</span>.
                         </li>
                         <br></br>
                         <li>
-                            Apart from coding, some other activities I love to do are <span style={{ color: '#C33764' }}>Playing video games and listening to music</span>.
+                            Apart from coding, some other activities I love to do are <span className="title_plain_color">Playing video games and listening to music</span>.
                         </li>
                         <br></br>
                     </ul>

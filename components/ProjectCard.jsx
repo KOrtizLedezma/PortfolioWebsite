@@ -4,7 +4,7 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 const ProjectCard = ({ imgUrl, title, description, gitUrl, demoUrl }) => {
   return (
-    <div className="flex flex-col justify-between p-4 border-2 rounded-lg h-full" style={{ borderColor: '#C33764' }}>
+    <div className="flex flex-col justify-between p-4 border-2 rounded-lg h-full" style={{ borderColor: 'var(--color-primary)' }}>
       <div>
         <img src={imgUrl} alt={title} className="w-full h-48 object-cover rounded-md" />
         <div className="p-4">
@@ -14,18 +14,18 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, demoUrl }) => {
       </div>
       <div className={`flex ${demoUrl ? "justify-center gap-4" : "justify-center"} mt-auto`}>
         <Link href={gitUrl} passHref>
-          <button
-            className="border-2 py-2 px-4 rounded text-[#C33764] hover:bg-[#C33764] hover:text-white transition-colors duration-300 flex items-center justify-center"
-            style={{ borderColor: '#C33764', backgroundColor: 'transparent' }}
-          >
+            <button
+              className="border-2 py-2 px-4 rounded text-primary transition-transform duration-300 ease-in-out hover:scale-105 flex items-center justify-center"
+              style={{ borderColor: 'var(--color-primary)', backgroundColor: 'transparent'}}
+            >
             <FaGithub size={20} />
           </button>
         </Link>
         {demoUrl && (
           <Link href={demoUrl} passHref>
             <button
-              className="border-2 py-2 px-4 rounded text-[#C33764] hover:bg-[#C33764] hover:text-white transition-colors duration-300 flex items-center justify-center"
-              style={{ borderColor: '#C33764', backgroundColor: 'transparent' }}
+              className="border-2 py-2 px-4 rounded text-primary transition-transform duration-300 ease-in-out hover:scale-105 flex items-center justify-center"
+              style={{ borderColor: 'var(--color-primary)', backgroundColor: 'transparent'}}
             >
               <FaExternalLinkAlt size={20} />
             </button>

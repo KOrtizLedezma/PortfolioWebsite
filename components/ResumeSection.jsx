@@ -29,13 +29,13 @@ const ResumeSection = () => {
       <h2 className="title_plain_color text-4xl font-bold mb-8 text-center">My Resume</h2>
       <div className="resume-preview-container mb-4 flex justify-center items-center w-full max-w-3xl">
         {isMobile ? (
-          <div className="w-full text-center">
+          <div className="w-full text-center text-secondary">
             <p className="mb-4">Resume preview is not available on mobile devices.</p>
             <a
               href="/KenetOrtizCV.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#C33764] underline"
+              className="text-primary underline"
             >
               Open resume in new tab
             </a>
@@ -57,8 +57,8 @@ const ResumeSection = () => {
       <div className="mt-4">
         <button
           onClick={handleDownload}
-          className="border-2 py-2 px-4 rounded text-[#C33764] hover:bg-[#C33764] hover:text-white transition-colors duration-300 flex items-center justify-center"
-          style={{ borderColor: '#C33764', backgroundColor: 'transparent' }}
+          className="border-2 py-2 px-4 rounded text-primary hover:bg-primary hover:text-secondary transition-colors duration-300 flex items-center justify-center"
+          style={{ borderColor: 'var(--color-primary)', backgroundColor: 'transparent' }}
         >
           <FaDownload size={20} className="mr-2" /> 
           {isMobile ? "Download Resume" : "Download"}

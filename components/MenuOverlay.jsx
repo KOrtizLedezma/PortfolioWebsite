@@ -1,5 +1,6 @@
 import React from "react";
 import NavLink from "./NavLink";
+import ThemeToggle from "./ThemeToggle";
 
 const MenuOverlay = ({ links }) => {
   return (
@@ -9,6 +10,7 @@ const MenuOverlay = ({ links }) => {
           <NavLink href={link.path} title={link.title} icon={link.icon} />
         </li>
       ))}
+      <ThemeToggle />
     </ul>
   );
 };

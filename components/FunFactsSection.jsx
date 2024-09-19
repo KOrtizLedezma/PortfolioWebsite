@@ -17,39 +17,39 @@ const AboutSection = () => {
                         <ul className="list-disc pl-5 text-base lg:text-lg">
                             <p>
                                 I&apos;ve always been into 
-                                <span style={{ color: '#C33764' }}> tech and video games </span>, 
+                                <span className="title_plain_color"> tech and video games </span>, 
                                 and I guess you could say I&apos;ve picked up a few things along the way.
                             </p>
                             <br />
                             <p>
                                 I fell in love with 
-                                <span style={{ color: '#C33764' }}> programming </span>
+                                <span className="title_plain_color"> programming </span>
                                 , and I&apos;m always learning something new (at least, I think I am… )
                             </p>
                             <br />
                             <p>
                                 Languages? Yeah, I Know a Few &mdash; I&apos;ve worked with 
-                                <span style={{ color: '#C33764' }}> Python, Java, C++, C# and JavaScript </span>
+                                <span className="title_plain_color"> Python, Java, C++, C# and JavaScript </span>
                                 , and I&apos;m always trying to get better.
                                 </p>
                             <br />
                             <p>
                                 When I&apos;m not lost in 
-                                <span style={{ color: '#C33764' }}> code </span>, 
+                                <span className="title_plain_color"> code </span>, 
                                 I&apos;m usually lost in a 
-                                <span style={{ color: '#C33764' }}> video game </span> 
+                                <span className="title_plain_color"> video game </span> 
                                 somewhere.
                             </p>
                             <br />
                             <p>
                                 I&apos;m passionate about using 
-                                <span style={{ color: '#C33764' }}> tech </span> 
+                                <span className="title_plain_color"> tech </span> 
                                 to build cool experiences, and I&apos;m excited to see what comes next!
                             </p>
                             <br />
                             <p>
                                 I&apos;m bilingual, speaking both
-                                <span style={{ color: '#C33764' }}> English and Spanish </span>
+                                <span className="title_plain_color"> English and Spanish </span>
                                     fluently 
                             </p>
                         </ul>

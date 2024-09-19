@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import NavLink from './NavLink';
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from './MenuOverlay';
+import ThemeToggle from './ThemeToggle';
 import { useRouter } from 'next/navigation';
 
 // Import icons from react-icons
@@ -59,6 +60,7 @@ const NavBar = () => {
         </div>
         <div className="menu hidden md:block md:w-auto" id="navbar">
           <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
+            <ThemeToggle />
             {navLinks.map((link, index) => (
               <li key={index}>
                 <NavLink href={link.path} title={link.title} icon={link.icon} />
