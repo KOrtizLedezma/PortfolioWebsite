@@ -118,7 +118,7 @@ const ProjectsSection = () => {
   return (
     <section id="projects" className="mb-12">
       <h2 className="text-center hero_heading mt-4 mb-8 md:mb-12 font-extrabold text-4xl sm:text-5xl lg:text-6xl">
-        <span className="gradient_text">My Projects</span>
+        <span className="title_plain_color">My Projects</span>
       </h2>
       <div className="tag_section">
         <ProjectTag onClick={handleTagChange} name="All" isSelected={tag === "All"} />

@@ -17,39 +17,39 @@ const AboutSection = () => {
                         <ul className="list-disc pl-5 text-base lg:text-lg">
                             <p>
                                 I&apos;ve always been into 
-                                <span className="title_plain_color"> tech and video games </span>, 
+                                <span className="title_plain_color" style={{ fontWeight: 'bold' }}> tech and video games </span>, 
                                 and I guess you could say I&apos;ve picked up a few things along the way.
                             </p>
                             <br />
                             <p>
                                 I fell in love with 
-                                <span className="title_plain_color"> programming </span>
+                                <span className="title_plain_color" style={{ fontWeight: 'bold' }}> programming </span>
                                 , and I&apos;m always learning something new (at least, I think I am… )
                             </p>
                             <br />
                             <p>
                                 Languages? Yeah, I Know a Few &mdash; I&apos;ve worked with 
-                                <span className="title_plain_color"> Python, Java, C++, C# and JavaScript </span>
+                                <span className="title_plain_color" style={{ fontWeight: 'bold' }}> Python, Java, C++, C# and JavaScript </span>
                                 , and I&apos;m always trying to get better.
                                 </p>
                             <br />
                             <p>
                                 When I&apos;m not lost in 
-                                <span className="title_plain_color"> code </span>, 
+                                <span className="title_plain_color" style={{ fontWeight: 'bold' }}> code </span>, 
                                 I&apos;m usually lost in a 
-                                <span className="title_plain_color"> video game </span> 
+                                <span className="title_plain_color" style={{ fontWeight: 'bold' }}> video game </span> 
                                 somewhere.
                             </p>
                             <br />
                             <p>
                                 I&apos;m passionate about using 
-                                <span className="title_plain_color"> tech </span> 
+                                <span className="title_plain_color" style={{ fontWeight: 'bold' }}> tech </span> 
                                 to build cool experiences, and I&apos;m excited to see what comes next!
                             </p>
                             <br />
                             <p>
                                 I&apos;m bilingual, speaking both
-                                <span className="title_plain_color"> English and Spanish </span>
+                                <span className="title_plain_color" style={{ fontWeight: 'bold' }}> English and Spanish </span>
                                     fluently 
                             </p>
                         </ul>
