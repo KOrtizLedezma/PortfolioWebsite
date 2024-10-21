@@ -95,6 +95,26 @@ const projectsData = [
     gitUrl: "https://github.com/KOrtizLedezma/Project3COP3530SAH.git",
     demoUrl: "https://songassociationhelper.vercel.app/",
   },
+
+  {
+    id: 11,
+    title: "The Moderator Bot",
+    description: "A simple discord bot, focused on small servers.",
+    image: "/Images/Projects/DiscordWebsite.png",
+    tag: ["All", "JavaScript"],
+    gitUrl: "https://github.com/KOrtizLedezma/TheModerator",
+    demoUrl: "https://discord.com/oauth2/authorize?client_id=1297779637317009519",
+  },
+
+  {
+    id: 12,
+    title: "The Moderator Website",
+    description: "A simple and responsive website to display information about The Moderator Bot.",
+    image: "/Images/Projects/DiscordWebsite.png",
+    tag: ["All", "JavaScript"],
+    gitUrl: "https://github.com/KOrtizLedezma/TheModeratorWebsite",
+    demoUrl: "https://themoderator.vercel.app/",
+  },
 ];
 
 const ProjectsSection = () => {
