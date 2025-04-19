@@ -115,6 +115,26 @@ const projectsData = [
     gitUrl: "https://github.com/KOrtizLedezma/TheModeratorWebsite",
     demoUrl: "https://themoderator.vercel.app/",
   },
+
+  {
+    id: 13,
+    title: "DoorLock SV Mod",
+    description: "A Stardew Valley mod that lets players lock doors to control access, using in-game data for automatic cabin assignments.",
+    image: "/Images/Projects/DoorLockSV.png",
+    tag: ["All", "C#"],
+    gitUrl: "https://github.com/KOrtizLedezma/DoorLock.git",
+    demoUrl: null,
+  },
+
+  {
+    id: 14,
+    title: "Geoquiz",
+    description: "GeoQuiz is an interactive platform designed to make learning geography fun and engaging through quizzes.",
+    image: "/Images/Projects/Geoquiz.png",
+    tag: ["All", "JavaScript"],
+    gitUrl: "https://github.com/KOrtizLedezma/GeoQuiz.git",
+    demoUrl: null,
+  },
 ];
 
 const ProjectsSection = () => {

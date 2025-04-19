@@ -30,7 +30,7 @@ const AboutSection = () => {
                             <p>
                                 Languages? Yeah, I Know a Few &mdash; I&apos;ve worked with 
                                 <span className="title_plain_color" style={{ fontWeight: 'bold' }}> Python, Java, C++, C# and JavaScript </span>
-                                , and I&apos;m always trying to get better.
+                                , among others, and I&apos;m always trying to get better.
                                 </p>
                             <br />
                             <p>
