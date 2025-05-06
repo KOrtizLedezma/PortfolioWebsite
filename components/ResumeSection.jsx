@@ -1,13 +1,17 @@
-"use client"
+"use client";
 
 import React, { useState, useEffect } from 'react';
 import { FaDownload } from 'react-icons/fa';
 
 const ResumeSection = () => {
-  const [windowWidth, setWindowWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 0);
+  const [windowWidth, setWindowWidth] = useState(0);
+  const [hydrated, setHydrated] = useState(false);
 
   useEffect(() => {
+    // Mark component as hydrated so that dynamic parts can be rendered safely
+    setHydrated(true);
     const handleResize = () => setWindowWidth(window.innerWidth);
+    handleResize(); // initialize with current width
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
@@ -28,31 +32,33 @@ const ResumeSection = () => {
     <section className="resume-section my-8 flex flex-col items-center px-4">
       <h2 className="title_plain_color text-4xl font-bold mb-8 text-center">My Resume</h2>
       <div className="resume-preview-container mb-4 flex justify-center items-center w-full max-w-3xl">
-        {isMobile ? (
-          <div className="w-full text-center text-secondary">
-            <p className="mb-4">Resume preview is not available on mobile devices.</p>
-            <a
-              href="/KenetOrtizCV.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary underline"
-            >
-              Open resume in new tab
-            </a>
-          </div>
-        ) : (
-          <iframe
-            src="/KenetOrtizCV.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH"
-            width="100%"
-            height="100%"
-            style={{ 
-              border: 'none',
-              maxWidth: '100%',
-              aspectRatio: '8.5 / 11',
-            }}
-            title="Resume Preview"
-          ></iframe>
-        )}
+        {hydrated ? (
+          isMobile ? (
+            <div className="w-full text-center text-secondary">
+              <p className="mb-4">Resume preview is not available on mobile devices.</p>
+              <a
+                href="/KenetOrtizCV.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary underline"
+              >
+                Open resume in new tab
+              </a>
+            </div>
+          ) : (
+            <iframe
+              src="/KenetOrtizCV.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH"
+              width="100%"
+              height="100%"
+              style={{
+                border: 'none',
+                maxWidth: '100%',
+                aspectRatio: '8.5 / 11',
+              }}
+              title="Resume Preview"
+            ></iframe>
+          )
+        ) : null}
       </div>
       <div className="mt-4">
         <button
@@ -60,7 +66,7 @@ const ResumeSection = () => {
           className="border-2 py-2 px-4 rounded text-primary hover:bg-primary hover:text-secondary transition-colors duration-300 flex items-center justify-center"
           style={{ borderColor: 'var(--color-primary)', backgroundColor: 'transparent' }}
         >
-          <FaDownload size={20} className="mr-2" /> 
+          <FaDownload size={20} className="mr-2" />
           {isMobile ? "Download Resume" : "Download"}
         </button>
       </div>
