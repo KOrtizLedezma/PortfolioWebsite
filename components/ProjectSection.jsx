@@ -8,7 +8,7 @@ const projectsData = [
   {
     id: 1,
     title: "Handbird",
-    description: "A modern twist on the classic Flappy Bird game — this version lets you jump by making a fist and restart by showing a peace sign, using real-time hand gesture recognition powered.",
+    description: "A modern twist on the classic Flappy Bird game — this version lets you jump by making a fist and restart by showing a peace sign, using real-time hand gesture recognition.",
     image: "/Images/Projects/HandBird.png",
     tag: ["All", "Python"],
     gitUrl: "https://github.com/KOrtizLedezma/HandBird.git",
