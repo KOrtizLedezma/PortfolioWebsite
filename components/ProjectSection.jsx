@@ -48,7 +48,7 @@ const projectsData = [
     image: "/Images/Projects/TaskManager.png",
     tag: ["All", "JavaScript"],
     gitUrl: "https://github.com/KOrtizLedezma/To-Do-List-Webpage",
-    demoUrl: null,
+    demoUrl: "https://taskmanager.kolbcknd.org/",
   },
   {
     id: 6,
