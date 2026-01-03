@@ -17,7 +17,7 @@ const ResumeSection = () => {
   }, []);
 
   const handleDownload = () => {
-    const fileUrl = '/KenetOrtizCV.pdf';
+    const fileUrl = '/resume.pdf';
     const link = document.createElement('a');
     link.href = fileUrl;
     link.download = 'Kenet-Ortiz-Resume.pdf';
@@ -37,7 +37,7 @@ const ResumeSection = () => {
             <div className="w-full text-center text-secondary">
               <p className="mb-4">Resume preview is not available on mobile devices.</p>
               <a
-                href="/KenetOrtizCV.pdf"
+                href="/resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary underline"
@@ -47,7 +47,7 @@ const ResumeSection = () => {
             </div>
           ) : (
             <iframe
-              src="/KenetOrtizCV.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH"
+              src="/resume.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH"
               width="100%"
               height="100%"
               style={{
